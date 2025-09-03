@@ -1,0 +1,106 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #51006a 0%, #3393b3 100%);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  min-height: 100vh;
+}
+header {
+  background: rgba(0,0,0,0.5);
+  padding: 2rem 0;
+  text-align: center;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #fd4d52 30%, #ffb347 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.movie-container, .showtime-container {
+  margin: 20px auto 15px auto;
+  text-align: center;
+  font-size: 18px;
+}
+select {
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  padding: 6px 16px;
+  margin-left: 12px;
+  outline: none;
+}
+.container {
+  background: rgba(255,255,255,0.1);
+  margin: 15px auto;
+  width: 360px;
+  border-radius: 12px;
+  padding: 30px 0;
+  box-shadow: 0 10px 24px #0004;
+}
+.screen {
+  background: #f9d923;
+  height: 50px;
+  width: 80%;
+  margin: 0 auto 20px auto;
+  border-radius: 0 0 30px 30px/0 0 70px 70px;
+  box-shadow: 0 0 32px 4px #fd4d5244;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.seat {
+  background: linear-gradient(135deg, #fd4d52 0%, #ffb347 100%);
+  height: 32px;
+  width: 32px;
+  margin: 8px;
+  border-radius: 7px;
+  box-shadow: 0 4px 12px #0002;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+.seat.selected {
+  background: linear-gradient(135deg, #42e695 0%, #3bb2b8 100%);
+  box-shadow: 0 4px 20px #49ffafad;
+  transform: scale(1.1);
+}
+.seat.occupied {
+  background: #fff4;
+  cursor: not-allowed;
+  border: 2px solid #ffb347;
+  filter: grayscale(0.7);
+}
+.text {
+  margin: 28px auto 18px auto;
+  font-size: 1.15rem;
+  text-align: center;
+  font-weight: bold;
+}
+.book-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 40px;
+  background: linear-gradient(90deg,#fd4d52 40%,#ffb347 100%);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 24px #fd4d5228;
+  transition: background 0.2s;
+}
+.book-btn:hover {
+  background: linear-gradient(90deg,#ffb347 10%,#fd4d52 90%);
+  color: #fffcd6;
+}
+footer {
+  text-align: center;
+  margin: 32px 0 8px 0;
+  opacity: 0.5;
+  font-size: 14px;
+  color: #fff;
+}
