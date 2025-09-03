@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tollywood Movie Ticket Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="gradient-text">Tollywood Movie Ticket Booking</h1>
+  </header>
+  <main>
+    <div class="movie-container">
+      <label for="movie">Select Movie: </label>
+      <select id="movie">
+        <option value="12">Pushpa 2 ($12)</option>
+        <option value="10">Kalki 2898 AD ($10)</option>
+        <option value="8">Salaar ($8)</option>
+      </select>
+    </div>
+    <div class="showtime-container">
+      <label for="showtime">Showtime: </label>
+      <select id="showtime">
+        <option value="10:00 AM">10:00 AM</option>
+        <option value="1:30 PM">1:30 PM</option>
+        <option value="4:00 PM">4:00 PM</option>
+        <option value="7:30 PM">7:30 PM</option>
+      </select>
+    </div>
+    <div class="container">
+      <div class="screen"></div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+    <p class="text">You have selected <span id="count">0</span> seat(s) for a price of $<span id="total">0</span>.</p>
+    <button class="book-btn">Book Now</button>
+  </main>
+  <footer>
+    <p>&copy; 2025 Tollywood Magic</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
